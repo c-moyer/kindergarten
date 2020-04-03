@@ -3,6 +3,7 @@
   var min = 0;
   var max = 10;
   var top, bottom, answer;
+  var correctCount, incorrectCount = 0;
 
 
 
@@ -30,9 +31,13 @@ document.getElementById("next").addEventListener("click", function(){
     setEquation();
     answer.value = "";
     next.innerHTML = "&#x2714";
+    correctCount++;
+    document.getElementById("correct").innerHTML = correctCount;
   }else{
     next.innerHTML = "&#x10102";
     next.style = "background:red;"
+    incorrectCount++;
+    document.getElementById("incorrect").innerHTML = incorrectCount;
   }
   answer.focus();
   answer.select();
