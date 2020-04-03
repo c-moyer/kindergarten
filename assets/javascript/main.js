@@ -3,7 +3,8 @@
   var min = 0;
   var max = 10;
   var top, bottom, answer;
-  var correctCount, incorrectCount = 0;
+  var correctCount = 0;
+  var incorrectCount = 0;
 
 
 
